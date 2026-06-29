@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whimsical Sparkle Shop</title>
+    <!-- Importing a playful, bold font -->
+    <link href="https://googleapis.com" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background-color: #FFF5EA; /* Soft pastel cream base */
+            color: #2B2119;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Fredoka One', cursive;
+            font-weight: normal;
+        }
+
+        /* Hero Section with an Aura Bora-style vibrant palette */
+        .hero {
+            background: linear-gradient(135deg, #FFD275, #FF8EA1);
+            padding: 80px 20px;
+            text-align: center;
+            border-bottom: 5px solid #2B2119;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            color: #FFF;
+            text-shadow: 4px 4px 0px #2B2119;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            font-weight: 700;
+            max-width: 600px;
+            margin: 0 auto 30px auto;
+            color: #2B2119;
+        }
+
+        /* Products Grid */
+        .grid-container {
+            max-width: 1200px;
+            margin: 60px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+        }
+
+        /* Chunky, colourful product cards */
+        .card {
+            background: #FFF;
+            border: 4px solid #2B2119;
+            border-radius: 20px;
+            padding: 25px;
+            text-align: center;
+            box-shadow: 8px 8px 0px #2B2119;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .card:hover {
+            transform: translate(-4px, -4px);
+            box-shadow: 12px 12px 0px #2B2119;
+        }
+
+        /* Distinct background colours for each flavour card */
+        .card-lime { background-color: #E2F5CB; }
+        .card-berry { background-color: #FFE3EC; }
+        .card-orange { background-color: #FFEAD2; }
+
+        .image-container {
+            background-color: rgba(255, 255, 255, 0.6);
+            border: 3px dashed #2B2119;
+            border-radius: 15px;
+            height: 250px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .product-img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+        .card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 1rem;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #2B2119;
+            color: #FFF;
+            padding: 10px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-family: 'Fredoka One', cursive;
+            font-size: 1.1rem;
+            transition: background-color 0.2s;
+        }
+
+        .btn:hover {
+            background-color: #FF8EA1;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="hero">
+        <h1>Vibrant Herbal Elixirs</h1>
+        <p>A colorful explosion of real herbal sparkles made directly from nature's wildest ingredients!</p>
+    </header>
+
+    <!-- Product Grid Section -->
+    <main class="grid-container">
+
+        <!-- Card 1 -->
+        <div class="card card-lime">
+            <div class="image-container">
+                <!-- Replace 'lime-sparkle.png' with your image path -->
+                <img src="lime-sparkle.png" alt="Lime Basil Sparkle" class="product-img">
+            </div>
+            <h3>Lime Basil</h3>
+            <p>Crisp, sharp citrus crushed with garden-fresh green herbs.</p>
+            <a href="#" class="btn">Sip Now</a>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card card-berry">
+            <div class="image-container">
+                <!-- Replace 'berry-sparkle.png' with your image path -->
+                <img src="berry-sparkle.png" alt="Elderberry Rose Sparkle" class="product-img">
+            </div>
+            <h3>Elderberry Rose</h3>
+            <p>Deep, sweet wild berries paired with floral organic notes.</p>
+            <a href="#" class="btn">Sip Now</a>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card card-orange">
+            <div class="image-container">
+                <!-- Replace 'orange-sparkle.png' with your image path -->
+                <img src="orange-sparkle.png" alt="Tangerine Sage Sparkle" class="product-img">
+            </div>
+            <h3>Tangerine Sage</h3>
+            <p>Sun-drenched citrus blended with fuzzy, earthy forest sage.</p>
+            <a href="#" class="btn">Sip Now</a>
+        </div>
+
+    </main>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whimsical Sparkle Shop</title>
+    <!-- Importing a playful, bold font -->
+    <link href="https://googleapis.com" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background-color: #FFF5EA; /* Soft pastel cream base */
+            color: #2B2119;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Fredoka One', cursive;
+            font-weight: normal;
+        }
+
+        /* Hero Section with an Aura Bora-style vibrant palette */
+        .hero {
+            background: linear-gradient(135deg, #FFD275, #FF8EA1);
+            padding: 80px 20px;
+            text-align: center;
+            border-bottom: 5px solid #2B2119;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            color: #FFF;
+            text-shadow: 4px 4px 0px #2B2119;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            font-weight: 700;
+            max-width: 600px;
+            margin: 0 auto 30px auto;
+            color: #2B2119;
+        }
+
+        /* Products Grid */
+        .grid-container {
+            max-width: 1200px;
+            margin: 60px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+        }
+
+        /* Chunky, colourful product cards */
+        .card {
+            background: #FFF;
+            border: 4px solid #2B2119;
+            border-radius: 20px;
+            padding: 25px;
+            text-align: center;
+            box-shadow: 8px 8px 0px #2B2119;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .card:hover {
+            transform: translate(-4px, -4px);
+            box-shadow: 12px 12px 0px #2B2119;
+        }
+
+        /* Distinct background colours for each flavour card */
+        .card-lime { background-color: #E2F5CB; }
+        .card-berry { background-color: #FFE3EC; }
+        .card-orange { background-color: #FFEAD2; }
+
+        .image-container {
+            background-color: rgba(255, 255, 255, 0.6);
+            border: 3px dashed #2B2119;
+            border-radius: 15px;
+            height: 250px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .product-img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+        .card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 1rem;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #2B2119;
+            color: #FFF;
+            padding: 10px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-family: 'Fredoka One', cursive;
+            font-size: 1.1rem;
+            transition: background-color 0.2s;
+        }
+
+        .btn:hover {
+            background-color: #FF8EA1;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="hero">
+        <h1>Vibrant Herbal Elixirs</h1>
+        <p>A colorful explosion of real herbal sparkles made directly from nature's wildest ingredients!</p>
+    </header>
+
+    <!-- Product Grid Section -->
+    <main class="grid-container">
+
+        <!-- Card 1 -->
+        <div class="card card-lime">
+            <div class="image-container">
+                <!-- Replace 'lime-sparkle.png' with your image path -->
+                <img src="lime-sparkle.png" alt="Lime Basil Sparkle" class="product-img">
+            </div>
+            <h3>Lime Basil</h3>
+            <p>Crisp, sharp citrus crushed with garden-fresh green herbs.</p>
+            <a href="#" class="btn">Sip Now</a>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card card-berry">
+            <div class="image-container">
+                <!-- Replace 'berry-sparkle.png' with your image path -->
+                <img src="berry-sparkle.png" alt="Elderberry Rose Sparkle" class="product-img">
+            </div>
+            <h3>Elderberry Rose</h3>
+            <p>Deep, sweet wild berries paired with floral organic notes.</p>
+            <a href="#" class="btn">Sip Now</a>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card card-orange">
+            <div class="image-container">
+                <!-- Replace 'orange-sparkle.png' with your image path -->
+                <img src="orange-sparkle.png" alt="Tangerine Sage Sparkle" class="product-img">
+            </div>
+            <h3>Tangerine Sage</h3>
+            <p>Sun-drenched citrus blended with fuzzy, earthy forest sage.</p>
+            <a href="#" class="btn">Sip Now</a>
+        </div>
+
+    </main>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whimsical Sparkle Shop</title>
+    <!-- Importing a playful, bold font -->
+    <link href="https://googleapis.com" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background-color: #FFF5EA; /* Soft pastel cream base */
+            color: #2B2119;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Fredoka One', cursive;
+            font-weight: normal;
+        }
+
+        /* Hero Section with an Aura Bora-style vibrant palette */
+        .hero {
+            background: linear-gradient(135deg, #FFD275, #FF8EA1);
+            padding: 80px 20px;
+            text-align: center;
+            border-bottom: 5px solid #2B2119;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            color: #FFF;
+            text-shadow: 4px 4px 0px #2B2119;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            font-weight: 700;
+            max-width: 600px;
+            margin: 0 auto 30px auto;
+            color: #2B2119;
+        }
+
+        /* Products Grid */
+        .grid-container {
+            max-width: 1200px;
+            margin: 60px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+        }
+
+        /* Chunky, colourful product cards */
+        .card {
+            background: #FFF;
+            border: 4px solid #2B2119;
+            border-radius: 20px;
+            padding: 25px;
+            text-align: center;
+            box-shadow: 8px 8px 0px #2B2119;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .card:hover {
+            transform: translate(-4px, -4px);
+            box-shadow: 12px 12px 0px #2B2119;
+        }
+
+        /* Distinct background colours for each flavour card */
+        .card-lime { background-color: #E2F5CB; }
+        .card-berry { background-color: #FFE3EC; }
+        .card-orange { background-color: #FFEAD2; }
+
+        .image-container {
+            background-color: rgba(255, 255, 255, 0.6);
+            border: 3px dashed #2B2119;
+            border-radius: 15px;
+            height: 250px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .product-img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+        .card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 1rem;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #2B2119;
+            color: #FFF;
+            padding: 10px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-family: 'Fredoka One', cursive;
+            font-size: 1.1rem;
+            transition: background-color 0.2s;
+        }
+
+        .btn:hover {
+            background-color: #FF8EA1;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="hero">
+        <h1>Vibrant Herbal Elixirs</h1>
+        <p>A colorful explosion of real herbal sparkles made directly from nature's wildest ingredients!</p>
+    </header>
+
+    <!-- Product Grid Section -->
+    <main class="grid-container">
+
+        <!-- Card 1 -->
+        <div class="card card-lime">
+            <div class="image-container">
+                <!-- Replace 'lime-sparkle.png' with your image path -->
+                <img src="lime-sparkle.png" alt="Lime Basil Sparkle" class="product-img">
+            </div>
+            <h3>Lime Basil</h3>
+            <p>Crisp, sharp citrus crushed with garden-fresh green herbs.</p>
+            <a href="#" class="btn">Sip Now</a>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card card-berry">
+            <div class="image-container">
+                <!-- Replace 'berry-sparkle.png' with your image path -->
+                <img src="berry-sparkle.png" alt="Elderberry Rose Sparkle" class="product-img">
+            </div>
+            <h3>Elderberry Rose</h3>
+            <p>Deep, sweet wild berries paired with floral organic notes.</p>
+            <a href="#" class="btn">Sip Now</a>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card card-orange">
+            <div class="image-container">
+                <!-- Replace 'orange-sparkle.png' with your image path -->
+                <img src="orange-sparkle.png" alt="Tangerine Sage Sparkle" class="product-img">
+            </div>
+            <h3>Tangerine Sage</h3>
+            <p>Sun-drenched citrus blended with fuzzy, earthy forest sage.</p>
+            <a href="#" class="btn">Sip Now</a>
+        </div>
+
+    </main>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whimsical Sparkle Shop</title>
+    <!-- Importing a playful, bold font -->
+    <link href="https://googleapis.com" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background-color: #FFF5EA; /* Soft pastel cream base */
+            color: #2B2119;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Fredoka One', cursive;
+            font-weight: normal;
+        }
+
+        /* Hero Section with an Aura Bora-style vibrant palette */
+        .hero {
+            background: linear-gradient(135deg, #FFD275, #FF8EA1);
+            padding: 80px 20px;
+            text-align: center;
+            border-bottom: 5px solid #2B2119;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            color: #FFF;
+            text-shadow: 4px 4px 0px #2B2119;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            font-weight: 700;
+            max-width: 600px;
+            margin: 0 auto 30px auto;
+            color: #2B2119;
+        }
+
+        /* Products Grid */
+        .grid-container {
+            max-width: 1200px;
+            margin: 60px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+        }
+
+        /* Chunky, colourful product cards */
+        .card {
+            background: #FFF;
+            border: 4px solid #2B2119;
+            border-radius: 20px;
+            padding: 25px;
+            text-align: center;
+            box-shadow: 8px 8px 0px #2B2119;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .card:hover {
+            transform: translate(-4px, -4px);
+            box-shadow: 12px 12px 0px #2B2119;
+        }
+
+        /* Distinct background colours for each flavour card */
+        .card-lime { background-color: #E2F5CB; }
+        .card-berry { background-color: #FFE3EC; }
+        .card-orange { background-color: #FFEAD2; }
+
+        .image-container {
+            background-color: rgba(255, 255, 255, 0.6);
+            border: 3px dashed #2B2119;
+            border-radius: 15px;
+            height: 250px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .product-img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+        .card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 1rem;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #2B2119;
+            color: #FFF;
+            padding: 10px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-family: 'Fredoka One', cursive;
+            font-size: 1.1rem;
+            transition: background-color 0.2s;
+        }
+
+        .btn:hover {
+            background-color: #FF8EA1;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="hero">
+        <h1>Vibrant Herbal Elixirs</h1>
+        <p>A colorful explosion of real herbal sparkles made directly from nature's wildest ingredients!</p>
+    </header>
+
+    <!-- Product Grid Section -->
+    <main class="grid-container">
+
+        <!-- Card 1 -->
+        <div class="card card-lime">
+            <div class="image-container">
+                <!-- Replace 'lime-sparkle.png' with your image path -->
+                <img src="lime-sparkle.png" alt="Lime Basil Sparkle" class="product-img">
+            </div>
+            <h3>Lime Basil</h3>
+            <p>Crisp, sharp citrus crushed with garden-fresh green herbs.</p>
+            <a href="#" class="btn">Sip Now</a>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card card-berry">
+            <div class="image-container">
+                <!-- Replace 'berry-sparkle.png' with your image path -->
+                <img src="berry-sparkle.png" alt="Elderberry Rose Sparkle" class="product-img">
+            </div>
+            <h3>Elderberry Rose</h3>
+            <p>Deep, sweet wild berries paired with floral organic notes.</p>
+            <a href="#" class="btn">Sip Now</a>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card card-orange">
+            <div class="image-container">
+                <!-- Replace 'orange-sparkle.png' with your image path -->
+                <img src="orange-sparkle.png" alt="Tangerine Sage Sparkle" class="product-img">
+            </div>
+            <h3>Tangerine Sage</h3>
+            <p>Sun-drenched citrus blended with fuzzy, earthy forest sage.</p>
+            <a href="#" class="btn">Sip Now</a>
+        </div>
+
+    </main>
+
+</body>
+</html>
+
